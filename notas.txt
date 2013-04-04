@@ -1,0 +1,51 @@
+--- export Students (and final scores) ----
+
+appcfg.py download_data --config_file=export_config.py --kind=Student --url=http://gpionlinetraining.appspot.com/_ah/remote_api  --filename=local_student.txt
+
+
+
+--- lessons e Units -versão 1.2 ----
+
+Agora não é preciso fazer upload. O programa faz upload delas ao iniciar
+
+---- dados de user ----- 
+
+gpi.online.training
+
+gpitraining - mudar i e g para 1, 9
+
+9p1tra1n1n9
+
+gpionlinetraining.appspot.com
+
+-------Alterações no codigo -----
+
+Usa tabel ValidStudent para controlar acessos
+Retirado botão para 'text version' em cada video (unit.html) 
+Alterado para ter vários testes, um por cada módulo (ver docs em course-builder)
+
+---- notas -----
+No futuro, pode ser alterado para ir buscar os videos a outro lado, desde que seja sempre o mesmo host e só mude a referencia.
+
+----- dashboard ---------
+-> para voltar a feedback
+
+- mudar a6couse para 'postcourse'
+- mudar o numero de perguntas range(0,4) para range (0,7)
+- mudar 'correct' para 'vale'
+
+-> antes -> alterar para correr todas as perguntas em loop
+
+--- step 2 ---------
+You complete different modules
+-- if you click on 'my profile', you see 'done' for the questionnaires you have answered
+
+You answer the survey after you have completed ALL modules - that's when total score is calculated
+-- if you click on 'my profile', you see the score for each module, the score from step one and the total score.
+-- if you redo a module with better score, the score for module and total score are updated. Step one score stays he same
+
+- changes in 
+--assessments.py (store postcourse e overall_score)
+--student_profile.html - show done (step 1) score (step 2)
+
+   

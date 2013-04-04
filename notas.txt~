@@ -1,0 +1,38 @@
+--- export Students (and final scores) ----
+
+appcfg.py download_data --config_file=export_config.py --kind=Student --url=http://gpionlinetraining.appspot.com/_ah/remote_api  --filename=local_student.txt
+
+
+
+--- lessons e Units -versão 1.2 ----
+
+Agora não é preciso fazer upload. O programa faz upload delas ao iniciar
+
+---- dados de user ----- 
+
+gpi.online.training
+
+gpitraining - mudar i e g para 1, 9
+
+9p1tra1n1n9
+
+gpionlinetraining.appspot.com
+
+-------Alterações no codigo -----
+
+Usa tabel ValidStudent para controlar acessos
+Retirado botão para 'text version' em cada video (unit.html) 
+Alterado para ter vários testes, um por cada módulo (ver docs em course-builder)
+
+---- notas -----
+No futuro, pode ser alterado para ir buscar os videos a outro lado, desde que seja sempre o mesmo host e só mude a referencia.
+
+----- dashboard ---------
+-> para voltar a feedback
+
+- mudar a6couse para 'postcourse'
+- mudar o numero de perguntas range(0,4) para range (0,7)
+- mudar 'correct' para 'vale'
+
+-> antes -> alterar para correr todas as perguntas em loop
+

@@ -1,0 +1,10 @@
+id,type,unit_id,title,release_date,now_available
+1,U,1,Global Peace Initiative,available February 16,True
+2,A,A11,Module 1 - Questions,,True
+3,A,A12,Module 1 - Questions_ES,,True
+4,U,2,GPI Existing Areas,available February 16,True
+5,A,A21,Module 2 - Questions,,True
+6,A,A22,Module 2 - Questions_ES,,True
+7,U,3,Spreading the Message,available February 16,True
+8,A,A31,Module 3 - Questions,,True
+9,A,A32,Module 3 - Questions_ES,,True

@@ -1,0 +1,13 @@
+reshuffle modules
+
+change:
+- essessments.py - done
+- rename dos modulos (units / lessons)
+- rename dos js
+- questões da Anna- alterar
+- novo module assessment 
+
+antes
+    mn = [10,7,4,5,5,4,5,5,5,7,5]
+depois
+    mn = [4,10,7,5,5,5,5,7,4,5,5]

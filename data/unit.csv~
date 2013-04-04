@@ -1,0 +1,37 @@
+id,type,unit_id,title,release_date,now_available
+1,U,1,Global Peace Initiative,available February 16,True
+2,A,A11,Module 1 - Questions,,True
+3,A,A12,Module 1 - Questions_ES,,True
+4,U,2,GPI Existing Areas,available February 16,True
+5,A,A21,Module 2 - Questions,,True
+6,A,A22,Module 2 - Questions_ES,,True
+7,U,3,Spreading the Message,available February 16,True
+8,A,A31,Module 3 - Questions,,True
+9,A,A32,Module 3 - Questions_ES,,True
+10,U,4,VMS Briefing to GPI,available February 23,True
+11,A,A41,Module 4 - Questions,,True
+12,A,A42,Module 4 - Questions_ES,,True
+13,U,5,GPI Resources,available February 23,True~
+14,A,A51,Module 5 - Questions,,True
+15,A,A52,Module 5 - Questions_ES,,True
+16,U,6,Community Assessment,available February 23,True
+17,A,A61,Module 6 - Questions,,True
+18,A,A62,Module 6 - Questions_ES,,True
+19,U,7,GPI Database Tutorial,available February 23,True
+20,A,A71,Module 7 - Questions,,True
+21,A,A72,Module 7 - Questions_ES,,True
+22,U,8,Assessment & Coaching,available February 23,True
+23,A,A81,Module 8 - Questions,,True
+24,A,A82,Module 8 - Questions_ES,,True
+25,U,9,Estimating Event Audiences,available February 23,True
+26,A,A91,Module 9 - Questions,,True
+27,A,A91,Module 9 - Questions_ES,,True
+28,U,10,Promoting Events,available March 5,True
+29,A,A101,Module 10 - Questions,,True
+30,A,A102,Module 10 - Questions_ES,,True
+31,U,11,Invitation System,available March 5,True
+32,A,A111,Module 11 - Questions,,True
+33,A,A112,Module 11 - Questions_ES,,True
+34,A,Fin,Feedback Form - Questions,,True
+35,A,FinE,Feedback Form - Questions_ES,,True
+
