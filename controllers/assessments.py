@@ -31,8 +31,9 @@ def calc_total_score(student):
     # tq = 62
     tq = 48
     # questions per module
-    mn = [10,7,4,5,5,4,5,5,5,7,5]
-    mn = [10,7,4,5,5,5,5,7,4,5,5]
+    # mn = [10,7,4,5,5,4,5,5,5,7,5] - training 1 sequence
+    # training 2 sequence
+    mn = [4,10,7,5,5,5,5,7,4,5,5]
     #
     overall_score = -1
     m1s=  utils.get_score(student, 'a1course')
