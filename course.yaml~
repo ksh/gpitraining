@@ -174,17 +174,27 @@ reg_form:
 # the student's actual score. ('%%' results in a single '%'.)
 assessment_confirmations:
   postcourse_header: |
-    Thank you for taking the post-course assessment. 
+    Thank you for your feedback. Your score is %s%%. Passing score is 90. 
+  not_complete: |
+    You did not complete all required modules. Please click on 'My Profile' tab to see what modules are missing, 
+    answer the questions for those modules and then repeat this feedback survey. 
+  postcourse_100:
+    Congratulations, you have passed the training with the maximum score of 100. 
+    If you want to review any module, you have until [date] to do it.
   postcourse_pass: |
-    Based on your overall course score (which includes the mid-course and
-    post-course assessments), you have passed the course. Congratulations!
+    Congratulations, you have passed the training. 
+    If you click on 'My Profile' tab you will see your score for each module and your total score. 
+    If you want to increase your understanding and reach a perfect score of 100, you can redo 
+    any module where your score is lower than 100. You have until [date] to complete this.
+    Please note that your score for each module only changes when your new score is higher
+    than your previous best score for that module. 
   postcourse_fail: |
-    Unfortunately, based on your overall course score (which includes the
-    mid-course and post-course assessments), you did not receive a
-    sufficiently high score to obtain a certificate of completion. We
-    encourage you to review the lessons noted and to attempt the
-    assessment again before it closes. Certificate or not, we hope you
-    enjoyed taking the course and learned new skills!
+    You should click on 'My Profile' tab to see your individual scores
+    and then repeat the modules where you have a score lower than 100, until your total score
+    is at least 90. You have until [date] to complete this.
+
+    Please note that your score for each module only changes when your new score is higher
+    than your previous best score for that module. 
   midcourse: |
     Thank you for taking the mid-course assessment. You may return and take
     this assessment again, or continue on to the next unit.

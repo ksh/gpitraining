@@ -31,35 +31,51 @@
 
 var assessment = {
   // HTML to display at the start of the page
-  preamble: '<b>Community Assessment, mutiple-choice questions. Module 6. Please answer <B>all<B> questions below</b><br><br>',
+  preamble: '<b>Community Assessment, mutiple-choice questions. Module 9. Please answer <B>all<B> questions below</b><br><br>',
 
   questionsList: [
 
-  {questionHTML:  'In a mid-sized town, there is a pwk community of 50. 10 are passionate about propagation. They are doing a  event every weekend, in which 1 new person attends each time.<br>What Potential score would you give to this city?</b><br><br>',
-    choices : [correct('1 to 4'),
-	      '5 to 7',
-	      '8 to 10'],
-    lesson: '3.4'},
-
-  {questionHTML:  'In a big city, there is a pwk community of 500, 50 are passionate about propagation. They are doing 5 different initiatives each week, and then 1 big initiative once every 2 months. 300 new people are introduced each month.<br>What Potential score would you give to this city',
-    choices : ['1 to 3',
-	      '4 to 6',
-	      correct('7 to 9'),
+  {questionHTML: 'City with 10 active pwk. Started Radio and TV. 50 people are introduced to the message, per month. Around 400 interested people will come to an event with Prem Rawat.<br>What Potential score would you give to this city?</b><br><br>',
+     choices : ['6',
+	        '7',
+		'8',
+	       correct('9'),
 	      '10'],
-    lesson: '3.4'},
+     lesson: '9.1'},
+
+  {questionHTML: 'City with 180-200 active pwk. Increased interest in GPI activities. 25 to 30 people are introduced to the message, per month. For an event with M, 400 to 500 interested people will come.<br>What Potential score would you give to this city?</b><br>',
+     choices : ['6',
+	        '7',
+	       correct('8'),
+	       correct('9'),
+	      '10'],
+     lesson: '9.1'}, 	  
 
 
-  {questionHTML:  'In a small town, there is a pwk community of 30. There is no propagation happening. They do local pwk events to keep themselves inspired.<br>What Potential score would you give to this city',
-    choices : [correct('1 to 4'),
-	      '5 to 7',
-	      '8 to 10'],
-    lesson: '3.4'},
+  {questionHTML:  'In a mid-sized town, there is a pwk community of 50. 10 are passionate about propagation. They are doing a  event every weekend, in which 1 new person attends each time.<br>What Potential score would you give to this city?</b><br><br>',
+    choices : [correct('3'),
+	       correct('4'),
+	      '5',
+	      '6',
+	      '7'],
+    lesson: '9.1'},
 
-  {questionHTML:  'In a small town, there is a pwk community of 400, 5 are passionate about propagation. They are doing 2 different initiatives each week, and they have a TV initiative that isintroducing 1000 new people each month.<br>What Potential score would you give to this city',
-    choices : ['1 to 4',
-	      '5 to 7',
-	      correct('8 to 10')],
-    lesson: '3.4'}
+  {questionHTML:  'In a small town, there is a pwk community of 400, 5 are passionate about propagation. They are doing 2 different initiatives each week, and they have a TV initiative that is estimated to be seen by 1000 people each month.<br>What Potential score would you give to this city?</b><br><br>',
+    choices : ['3 or 4',
+	      '5 or 6',
+	      '7 or 8',
+	      correct('9 or 10')],
+    lesson: '9.1'},
+
+
+  {questionHTML:  'In a small town, there is a pwk community of 30. There is no propagation happening. They do local pwk events to keep themselves inspired.<br>What Potential score would you give to this city?</b><br><br>',
+    choices : [correct('1'),
+	      '2',
+	      '3',
+	      '4',
+	      '5'],
+    lesson: '9.1'},
+
 
 ],
   assessmentName: 'a9course', // unique name submitted along with all of the answers

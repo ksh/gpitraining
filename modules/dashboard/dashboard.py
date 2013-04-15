@@ -409,11 +409,11 @@ class PostcourseAggregator(object):
 #		    lista.append(key)
 #		    lista.append(scores[key])
             li = []
-	    lim ={'a1course':10,'a2course':7,'a3course':4,'a4course':5,'a5course':5,'a6course':4}
+	    lim ={'a1course':4,'a2course':10,'a3course':7,'a4course':5,'a5course':5,'a6course':5}
 	    lim['a7course']=5
-	    lim['a8course']=5
+	    lim['a8course']=7
             lim['a9course']=5
-            lim['a10course']=7
+            lim['a10course']=5
             lim['a11course']=5
 	    lim['postcourse']=7
 	    for i in range(0,lim[key]):

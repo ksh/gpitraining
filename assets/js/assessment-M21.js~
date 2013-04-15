@@ -23,7 +23,7 @@
 var assessment = {
   // HTML to display at the start of the page
 
-  preamble: '<br><b>GPI Rep Training Multiple-choice Test / Module 1</b><br><br>Please answer <b>all</b> questions below<br><br>',
+  preamble: '<br><b>GPI Rep Training Multiple-choice Test / Module 2</b><br><br>Please answer <b>all</b> questions below<br><br>',
 
   // An ordered list of questions, with each question's type implicitly determined by the fields it possesses:
   //   choices              - multiple choice question (with exactly one correct answer)

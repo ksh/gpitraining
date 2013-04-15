@@ -20,8 +20,8 @@ id,type,unit_id,title,release_date,now_available
 15,A,M52,Module 5 - Questions_ES,,True
 
 16,U,6,GPI Database Tutorial,available April 12,True
-17,A,A61,Module 6 - Questions,,True
-18,A,A62,Module 6 - Questions_ES,,True
+17,A,M61,Module 6 - Questions,,True
+18,A,M62,Module 6 - Questions_ES,,True
 
 19,U,7,Estimating Event Audiences,available  April 12,True
 20,A,M71,Module 7 - Questions,,True

@@ -40,7 +40,7 @@ var assessment = {
      // for further study if the student answers this question incorrectly.
      lesson: '1.4'},
 
-    {questionHTML: 'The department that takes care of the attendees is:',
+    {questionHTML: 'The department dedicated to taking care of the attendees is:',
      choices: ["Maharaji's Event Team (MET)",
                'Event Services Group (ESG)',
                correct('Event Experience Group (EEG)'),

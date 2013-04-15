@@ -23,7 +23,6 @@ id,type,unit_id,title,release_date,now_available
 17,A,A61,Module 6 - Questions,,True
 18,A,A62,Module 6 - Questions_ES,,True
 
-
 19,U,7,Estimating Event Audiences,available  April 12,True
 20,A,M71,Module 7 - Questions,,True
 21,A,M72,Module 7 - Questions_ES,,True
@@ -43,8 +42,6 @@ id,type,unit_id,title,release_date,now_available
 31,U,11,Assessment & Coaching,available April 12,True
 32,A,M111,Module 11 - Questions,,True
 33,A,M112,Module 11 - Questions_ES,,True
-
-
 
 34,A,Fin,Feedback Form - Questions,,True
 35,A,FinE,Feedback Form - Questions_ES,,True
