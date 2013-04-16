@@ -41,11 +41,8 @@ course:
     You can complete each module in your own time,
     but our advice is not to leave all the work until the last minute!
     
-    Please complete Modules 1, 2 and 3 by Friday 22nd Feb.
+    Please complete all Modules requested by Sunday 28th April.
   blurb2: |    
-    We will upload further modules when they become available. They have to be
-    completed by Thurs 28th Feb.  You can start to work on them whenever they
-    become available on this platform.
     
     Please send all questions to the Forum set up for this purpose.
     
@@ -189,7 +186,7 @@ assessment_confirmations:
     Please note that your score for each module only changes when your new score is higher
     than your previous best score for that module. 
   postcourse_fail: |
-    You should click on 'My Profile' tab to see your individual scores
+    You have not passed the training. You should click on 'My Profile' tab to see your individual scores
     and then repeat the modules where you have a score lower than 100, until your total score
     is at least 90. You have until [date] to complete this.
 
@@ -220,6 +217,8 @@ assessment_confirmations:
     Thank you for taking the Module 10 questionnaire. Your answers have been saved.
   a11course: |
     Thank you for taking the Module 11 questionnaire. Your answers have been saved.
+  a12course: |
+    Thank you for taking the Module 12 questionnaire. Your answers have been saved.
   precourse: |
     Thank you for taking the pre-assessment. Please begin the course with
     Module 1.

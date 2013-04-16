@@ -25,15 +25,22 @@ from models.models import StudentAnswersEntity
 from utils import BaseHandler
 from google.appengine.ext import db
 
+MODULE_QUESTIONS =  [4,10,7,5,5,5,5,7,5,5,5,11,7]
+MANDATORY_MODULES = 8
 
 def calc_total_score(student):
     # number of questions
     # tq = 63
-    tq = 48
-    # questions per module
-    # mn = [10,7,4,5,5,4,5,5,5,7,5] - training 1 sequence
-    # training 2 sequence
-    mn = [4,10,7,5,5,5,5,7,5,5,5]
+    # tq = 48
+    # questions per module - training 2 - 12 modules
+    # last is postcourse
+    mn = MODULE_QUESTIONS
+    # mandatory modules 1 to 8
+    mm = MANDATORY_MODULES
+    # total questions
+    tq = 0
+    for i in range(8):
+      tq += mn[i]	    
     #
     overall_score = -1
     m1s=  utils.get_score(student, 'a1course')
@@ -47,18 +54,23 @@ def calc_total_score(student):
     m9s=  utils.get_score(student, 'a9course')
     m10s=  utils.get_score(student, 'a10course')
     m11s=  utils.get_score(student, 'a11course')
+    m12s=  utils.get_score(student, 'a12course')
+
     if m1s <> None and m2s <> None and m3s <> None and m4s <> None and m5s <> None and m6s <> None and m7s <> None and m8s <> None:
                # Calculate overall score for 1st 8 modules
         part_score = mn[0] * m1s + mn[1] * m2s + mn[2] * m3s + mn[3] * m4s + mn[3] * m5s + mn[5] * m6s + mn[6] * m7s + mn[7] * m8s
 	if m9s <> None:
 	  part_score +=  mn[8] * m9s
-	  tq += 4
+	  tq += mn[8]
 	if m10s <> None:
 	  part_score +=  mn[9] * m10s
-	  tq += 5
+	  tq += mn[9]
         if m11s <> None:
 	  part_score +=  mn[10] * m11s
-	  tq += 5
+	  tq += mn[10]
+        if m12s <> None:
+	  part_score +=  mn[11] * m12s
+	  tq += mn[11]
 
         overall_score = int(part_score/tq)
        # overall_score = int((part_score + mn[7] * m8s + mn[8] * m9s + mn[9] * m10s + mn[10] * m11s)/tq)

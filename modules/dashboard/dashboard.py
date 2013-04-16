@@ -32,6 +32,7 @@ from models.models import StudentAnswersEntity
 from google.appengine.api import users
 from google.appengine.ext import db
 
+MODULE_QUESTIONS =  [4,10,7,5,5,5,5,7,5,5,5,11,7]
 
 class DashboardHandler(ApplicationHandler, ReflectiveRequestHandler):
     """Handles all pages and actions required for managing a course."""
@@ -293,7 +294,7 @@ class DashboardHandler(ApplicationHandler, ReflectiveRequestHandler):
 		s_scores = []
                 for key, value0 in stats['students'].items():
 		    lin = []
-		    for key1 in ['a1course', 'a2course', 'a3course','a4course','a5course','a6course','a7course','a8course','a9course','a10course','a11course','postcourse', 'overall_score']:
+		    for key1 in ['a1course', 'a2course', 'a3course','a4course','a5course','a6course','a7course','a8course','a9course','a10course','a11course','a12course','postcourse', 'overall_score']:
 	                if key1 in value0.keys():
 				lin.append(value0[key1])
 			else:
@@ -399,6 +400,7 @@ class PostcourseAggregator(object):
         self.name_to_tuple = {}
 
     def visit(self, student):
+	mn = MODULE_QUESTIONS
         feedb = json.loads(student.data)
 	for key in feedb.keys():
 #	if 'postcourse' in feedb.keys():
@@ -409,13 +411,14 @@ class PostcourseAggregator(object):
 #		    lista.append(key)
 #		    lista.append(scores[key])
             li = []
-	    lim ={'a1course':4,'a2course':10,'a3course':7,'a4course':5,'a5course':5,'a6course':5}
-	    lim['a7course']=5
-	    lim['a8course']=7
-            lim['a9course']=5
-            lim['a10course']=5
-            lim['a11course']=5
-	    lim['postcourse']=7
+	    lim ={'a1course':mn[0],'a2course':mn[1],'a3course':mn[2],'a4course':mn[3],'a5course':mn[4],'a6course':mn[5]}
+	    lim['a7course']=mn[6]
+	    lim['a8course']=mn[7]
+            lim['a9course']=mn[8]
+            lim['a10course']=mn[9]
+            lim['a11course']=mn[10]
+            lim['a12course']=mn[11]
+	    lim['postcourse']=mn[12]
 	    for i in range(0,lim[key]):
 		if key <> 'postcourse':
 		    li.append(lista[i]['correct'])
