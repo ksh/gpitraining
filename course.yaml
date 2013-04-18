@@ -82,7 +82,6 @@ course:
 
   # Locale for internationalization.
   locale: 'en_US'
-  mn : [4,10,7,5,5,5,5,7,5,5,5,11,7]
 
 ####################################
 # Information about your institution

@@ -25,55 +25,41 @@ from models.models import StudentAnswersEntity
 from utils import BaseHandler
 from google.appengine.ext import db
 
+# questions per module - training 2 - 12 modules
+# last is postcourse
 MODULE_QUESTIONS =  [4,10,7,5,5,5,5,7,5,5,5,11,7]
+# mandatory modules 1 to 8
 MANDATORY_MODULES = 8
+# number of question modules
+MAX_MODULES = 12
 
 def calc_total_score(student):
-    # number of questions
-    # tq = 63
-    # tq = 48
-    # questions per module - training 2 - 12 modules
-    # last is postcourse
+    #
     mn = MODULE_QUESTIONS
-    # mandatory modules 1 to 8
     mm = MANDATORY_MODULES
-    # total questions
-    tq = 0
-    for i in range(8):
-      tq += mn[i]	    
     #
     overall_score = -1
-    m1s=  utils.get_score(student, 'a1course')
-    m2s=  utils.get_score(student, 'a2course')
-    m3s=  utils.get_score(student, 'a3course')
-    m4s=  utils.get_score(student, 'a4course')
-    m5s=  utils.get_score(student, 'a5course')
-    m6s=  utils.get_score(student, 'a6course')
-    m7s=  utils.get_score(student, 'a7course')
-    m8s=  utils.get_score(student, 'a8course')
-    m9s=  utils.get_score(student, 'a9course')
-    m10s=  utils.get_score(student, 'a10course')
-    m11s=  utils.get_score(student, 'a11course')
-    m12s=  utils.get_score(student, 'a12course')
+    ms = []
+    for i in range(1,MAX_MODULES+1):
+      course = 'a'+str(i)+'course'  
+      ms.append(utils.get_score(student, course))
 
-    if m1s <> None and m2s <> None and m3s <> None and m4s <> None and m5s <> None and m6s <> None and m7s <> None and m8s <> None:
-               # Calculate overall score for 1st 8 modules
-        part_score = mn[0] * m1s + mn[1] * m2s + mn[2] * m3s + mn[3] * m4s + mn[3] * m5s + mn[5] * m6s + mn[6] * m7s + mn[7] * m8s
-	if m9s <> None:
-	  part_score +=  mn[8] * m9s
-	  tq += mn[8]
-	if m10s <> None:
-	  part_score +=  mn[9] * m10s
-	  tq += mn[9]
-        if m11s <> None:
-	  part_score +=  mn[10] * m11s
-	  tq += mn[10]
-        if m12s <> None:
-	  part_score +=  mn[11] * m12s
-	  tq += mn[11]
+    # complete = mandatory modules are done (have scores)
+    complete = True
+    for score in ms[:MAX_MODULES]:
+	complete = complete and score <> None    
+
+    # compute overall score after mandatory modules are done
+    if complete:
+        part_score = 0
+        tq = 0
+	for i in range(MAX_MODULES):
+	  if ms[i] <> None:
+	    part_score +=  mn[i] * ms[i]
+	    tq += mn[i]
 
         overall_score = int(part_score/tq)
-       # overall_score = int((part_score + mn[7] * m8s + mn[8] * m9s + mn[9] * m10s + mn[10] * m11s)/tq)
+
     return overall_score
 
 

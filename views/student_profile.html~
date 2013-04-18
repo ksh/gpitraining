@@ -175,14 +175,14 @@
 	</td>
         </tr>
         <tr>
-          <th align="left">{% trans %} Step one score {% endtrans %}</th>
+          <th align="left">{% trans %} Original score {% endtrans %}</th>
           <td>
 		  {% if scores.has_key('postcourse') and  scores['postcourse'] > 0 %}
               {{ scores['postcourse'] }}
             {% endif %}
           </td>
         </tr>
-          <th align="left">{% trans %} Course score {% endtrans %}</th>
+          <th align="left">{% trans %} Latest score {% endtrans %}</th>
           <td>
             {% if scores.has_key('overall_score') %}
               {{ scores['overall_score'] }}
