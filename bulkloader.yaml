@@ -111,5 +111,18 @@ transformers:
     - property: __key__
       external_name: email
       export_transform: datastore.Key.name
+    - property: profile
+      external_name: profile
+      import_transform: db.Text
+
+- kind: Profile
+  connector: csv
+  property_map:
+    - property: __key__
+      external_name: name
+      export_transform: datastore.Key.name
+    - property: auth
+      external_name: auth
+      import_transform: db.Text
 
 

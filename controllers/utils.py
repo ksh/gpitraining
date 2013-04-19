@@ -26,6 +26,8 @@ from models.config import ConfigProperty
 from models.courses import Course
 from models.models import MemcacheManager
 from models.models import Student
+from models.models import ValidStudent
+from models.models import Profile
 from models.roles import Roles
 from models.utils import get_all_scores
 import webapp2
@@ -218,6 +220,9 @@ class BaseHandler(ApplicationHandler):
         if not student:
             self.redirect('/preview')
             return None
+        valid = ValidStudent.get_valid(user.email())
+	prof = Profile.get_by_key_name(valid.profile)
+        student.profile = eval(prof.auth)
 
         return student
 

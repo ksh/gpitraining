@@ -21,6 +21,8 @@ import json
 from models import models
 from models import utils
 from models.models import Student
+from models.models import ValidStudent
+from models.models import Profile
 from models.models import StudentAnswersEntity
 from utils import BaseHandler
 from google.appengine.ext import db
@@ -44,11 +46,18 @@ def calc_total_score(student):
       course = 'a'+str(i)+'course'  
       ms.append(utils.get_score(student, course))
 
+    # get profile for this user - mandatary modules
+    valid = ValidStudent.get_valid(student.key().name())
+    prof = Profile.get_by_key_name(valid.profile)
+    auth = eval(prof.auth)
+
     # complete = mandatory modules are done (have scores)
     complete = True
+    i = 0
     for score in ms[:MAX_MODULES]:
-	complete = complete and score <> None    
-
+	if auth[i]:
+	    complete = complete and (score <> None)    
+        i += 1
     # compute overall score after mandatory modules are done
     if complete:
         part_score = 0

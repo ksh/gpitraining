@@ -142,8 +142,9 @@ class Student(BaseEntity):
 
 # list of google users who can attend this course
 
-class ValidStudent(db.Model):
+class ValidStudent(BaseEntity):
   id = db.IntegerProperty()
+  profile = db.StringProperty()
 #  email = db.StringProperty()
 
   @classmethod
@@ -151,6 +152,10 @@ class ValidStudent(db.Model):
 	  em = email.lower()
 	  return ValidStudent.get_by_key_name(em.encode('utf8'))
 
+class Profile(BaseEntity):
+  name = db.StringProperty()
+  # string representation of a JSON dict.
+  auth = db.TextProperty(indexed=False)
 
 class EventEntity(BaseEntity):
     """Generic events.

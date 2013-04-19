@@ -43,6 +43,10 @@ id,type,unit_id,title,release_date,now_available
 32,A,M111,Module 11 - Questions,,True
 33,A,M112,Module 11 - Questions_ES,,True
 
-34,A,Fin,Feedback Form - Questions,,True
-35,A,FinE,Feedback Form - Questions_ES,,True
+34,U,12,Peace Education Program,available April 15,True
+35,A,M121,Module 12 - Questions,,True
+36,A,M122,Module 12 - Questions_ES,,True
+
+37,A,Fin,Feedback Form - Questions,,True
+38,A,FinE,Feedback Form - Questions_ES,,True
 
