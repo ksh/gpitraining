@@ -39,7 +39,7 @@ var assessment = {
   {questionHTML: ' Ciudad con 10 pcc activas. Comenzó radio y TV. Al mes se les presenta el mensaje a 50 personas. Unas 400 interesados vendrían a un evento con Prem Rawat.<br>Qué puntuación de potencial le darías a esta ciudad?</b><br>',
         choices : ['6',
 	        '7',
-		'8',
+	       correct('8'),
 	       correct('9'),
 	      '10'],
      lesson: '9.2'},
@@ -71,7 +71,7 @@ var assessment = {
 
   {questionHTML:  'En una pequeña ciudad, hay una comunidad de 30 pcc. No ocurre propagación. Hacen eventos locales para mantenerse inspirados los pcc.<br>Qué puntuación de potencial le darías a esta ciudad?</b><br><br>',
     choices : [correct('1'),
-	      '2',
+	      correct('2'),
 	      '3',
 	      '4',
 	      '5'],

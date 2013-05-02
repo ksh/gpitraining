@@ -28,6 +28,7 @@ from models import courses
 from models import jobs
 from models import roles
 from models.models import Student
+from models.models import ValidStudent
 from models.models import StudentAnswersEntity
 from google.appengine.api import users
 from google.appengine.ext import db
@@ -389,7 +390,9 @@ class StudentAggregator(object):
     def visit(self, student):
         if student.scores:
             scores = json.loads(student.scores)
-	    chave= student.user_id+","+student.name
+            valid = ValidStudent.get_valid(student.key().name())
+	    chave= student.user_id+","+student.name+","+valid.profile
+#	    chave= student.user_id+","+student.name
 #            for key in scores.keys():
 #		    lista.append(key)
 #		    lista.append(scores[key])

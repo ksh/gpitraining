@@ -38,7 +38,7 @@ var assessment = {
   {questionHTML: 'City with 10 active pwk. Started Radio and TV. 50 people are introduced to the message, per month. Around 400 interested people will come to an event with Prem Rawat.<br>What Potential score would you give to this city?</b><br><br>',
      choices : ['6',
 	        '7',
-		'8',
+	       correct('8'),
 	       correct('9'),
 	      '10'],
      lesson: '9.1'},
@@ -70,7 +70,7 @@ var assessment = {
 
   {questionHTML:  'In a small town, there is a pwk community of 30. There is no propagation happening. They do local pwk events to keep themselves inspired.<br>What Potential score would you give to this city?</b><br><br>',
     choices : [correct('1'),
-	      '2',
+	       correct('2'),
 	      '3',
 	      '4',
 	      '5'],

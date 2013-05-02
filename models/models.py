@@ -149,8 +149,8 @@ class ValidStudent(BaseEntity):
 
   @classmethod
   def get_valid(cls, email):
-	  em = email.lower()
-	  return ValidStudent.get_by_key_name(em.encode('utf8'))
+    em = email.lower()
+    return ValidStudent.get_by_key_name(em.encode('utf8'))
 
 class Profile(BaseEntity):
   name = db.StringProperty()
