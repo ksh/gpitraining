@@ -186,6 +186,18 @@
 	   {% endif %}
 	</td>
         </tr>
+	<tr>
+          <th align="left">&nbsp;&nbsp;&nbsp;{% trans %} Module 13 {% endtrans %}</th>
+          <td>
+           {% if scores.has_key('a13course') %}
+             {% if scores.has_key('overall_score') %}
+	        {{ scores['a13course'] }}
+	     {%else%}
+  	       done
+	     {% endif %}
+	   {% endif %}
+	</td>
+        </tr>
         <tr>
           <th align="left">{% trans %} Original score {% endtrans %}</th>
           <td>

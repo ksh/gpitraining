@@ -27,18 +27,18 @@ from models.models import StudentAnswersEntity
 from utils import BaseHandler
 from google.appengine.ext import db
 
-# questions per module - training 2 - 12 modules
+# questions per module - training 2 - 13 modules + postcourse
 # last is postcourse
-MODULE_QUESTIONS =  [4,10,7,5,5,5,5,7,5,5,5,11,7]
+MODULE_QUESTIONS =  [4,10,7,5,5,5,5,7,5,5,5,11,5,7]
 # mandatory modules 1 to 8
-MANDATORY_MODULES = 8
+# MANDATORY_MODULES = 8
 # number of question modules
-MAX_MODULES = 12
+MAX_MODULES = len(MODULE_QUESTIONS)-1
 
 def calc_total_score(student):
     #
     mn = MODULE_QUESTIONS
-    mm = MANDATORY_MODULES
+#    mm = MANDATORY_MODULES
     #
     overall_score = -1
     ms = []
@@ -202,6 +202,7 @@ class AnswerHandler(BaseHandler):
 
         self.template_value['navbar'] = {'course': True}
         self.template_value['assessment'] = assessment_type
+#        self.template_value['end_date'] = '26 May 2013'
         self.template_value['student_score'] = utils.get_score(
             student, 'overall_score')
         self.render('test_confirmation.html')

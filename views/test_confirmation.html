@@ -15,9 +15,8 @@
       {% if assessment == 'postcourse_pass' or assessment == 'postcourse_fail' or assessment == 'postcourse_100' %}
         {{course_info.assessment_confirmations.postcourse_header % student_score}}
       {% endif %}
-        <!-- Displays further confirmation text relevant to the specific assessment. -->
+        <!-- Displays further confirmation text relevant to the specific assessment. -->        
       {{course_info.assessment_confirmations[assessment]}}
-
       </p>
     <p>
       <a class="gcb-button" href="course">

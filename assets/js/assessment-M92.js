@@ -61,7 +61,7 @@ var assessment = {
 	      '7'],
     lesson: '9.2'},
 
-  {questionHTML:  'En una ciudad pequeña, hay una comunidad de 400 pcc, de los que 5 están dedicados con pasión a la difusión. Están llevando a cabo dos iniciativas diferentes cada semana y aparte están involucrados en la TV con una estimación de 1.000 personas por mes que ven WOPG TV.<br>Qué puntuación de potencial le darías a esta ciudad?</b><br><br>',
+  {questionHTML:  'En una ciudad pequeña, hay una comunidad de 400 pcc, de los que 5 están dedicados con pasión a la difusión. Están llevando a cabo dos iniciativas diferentes cada semana y aparte están involucrados en la TV con una estimación de 1.000 personas por mes que ven WOPG TV. Entre 5000 y 6000 interesados vendrían a un evento con Prem Rawat<br>Qué puntuación de potencial le darías a esta ciudad?</b><br><br>',
     choices : ['3 or 4',
 	      '5 or 6',
 	      '7 or 8',

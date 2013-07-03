@@ -47,6 +47,10 @@ id,type,unit_id,title,release_date,now_available
 35,A,M121,Module 12 - Questions,,True
 36,A,M122,Module 12 - Questions_ES,,True
 
-37,A,Fin,Feedback Form - Questions,,True
-38,A,FinE,Feedback Form - Questions_ES,,True
+37,U,13,Infoline Training,available July 3rd,True
+38,A,M131,Module 13 - Questions,,True
+39,A,M132,Module 13 - Questions_ES,,True
+
+40,A,Fin,Feedback Form - Questions,,True
+41,A,FinE,Feedback Form - Questions_ES,,True
 

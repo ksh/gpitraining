@@ -33,7 +33,7 @@ from models.models import StudentAnswersEntity
 from google.appengine.api import users
 from google.appengine.ext import db
 
-MODULE_QUESTIONS =  [4,10,7,5,5,5,5,7,5,5,5,11,7]
+MODULE_QUESTIONS =  [4,10,7,5,5,5,5,7,5,5,5,11,5,7]
 
 class DashboardHandler(ApplicationHandler, ReflectiveRequestHandler):
     """Handles all pages and actions required for managing a course."""
@@ -295,7 +295,7 @@ class DashboardHandler(ApplicationHandler, ReflectiveRequestHandler):
 		s_scores = []
                 for key, value0 in stats['students'].items():
 		    lin = []
-		    for key1 in ['a1course', 'a2course', 'a3course','a4course','a5course','a6course','a7course','a8course','a9course','a10course','a11course','a12course','postcourse', 'overall_score']:
+		    for key1 in ['a1course', 'a2course', 'a3course','a4course','a5course','a6course','a7course','a8course','a9course','a10course','a11course','a12course','a13course','postcourse', 'overall_score']:
 	                if key1 in value0.keys():
 				lin.append(value0[key1])
 			else:
@@ -421,7 +421,8 @@ class PostcourseAggregator(object):
             lim['a10course']=mn[9]
             lim['a11course']=mn[10]
             lim['a12course']=mn[11]
-	    lim['postcourse']=mn[12]
+            lim['a13course']=mn[12]
+	    lim['postcourse']=mn[13]
 	    for i in range(0,lim[key]):
 		if key <> 'postcourse':
 		    li.append(lista[i]['correct'])

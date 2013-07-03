@@ -60,7 +60,7 @@ var assessment = {
 	      '7'],
     lesson: '9.1'},
 
-  {questionHTML:  'In a small town, there is a pwk community of 400, 5 are passionate about propagation. They are doing 2 different initiatives each week, and they have a TV initiative that is estimated to be seen by 1000 people each month.<br>What Potential score would you give to this city?</b><br><br>',
+  {questionHTML:  'In a small town, there is a pwk community of 400, 5 are passionate about propagation. They are doing 2 different initiatives each week, and they have a TV initiative that is estimated to be seen by 1000 people each month. For an event with Prem Rawat, 5000 to 6000 interested people will come<br>What Potential score would you give to this city?</b><br><br>',
     choices : ['3 or 4',
 	      '5 or 6',
 	      '7 or 8',

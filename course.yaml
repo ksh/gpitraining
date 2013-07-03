@@ -62,7 +62,8 @@ course:
     alt_text: The Global Peace Initiative
 
   # Course start date.
-  start_date: 'April 12, 2013'
+  start_date: 'May 10, 2013'
+  end_date: 'May 26, 2013'
 
   # Forum URL. For details, see
   #
@@ -173,21 +174,21 @@ assessment_confirmations:
     Thank you for your feedback. Your score is %s%%. Passing score is 90. 
   not_complete: |
     You did not complete all required modules. Please click on 'My Profile' tab to see what modules are missing, 
-    answer the questions for those modules and then repeat this feedback survey. 
+    answer the questions for those modules and then repeat this feedback survey. You have until 26 May to complete this. 
   postcourse_100:
     Congratulations, you have passed the training with the maximum score of 100. 
-    If you want to review any module, you have until [date] to do it.
+    If you want to review any module, you have until 26 May to do it.
   postcourse_pass: |
     Congratulations, you have passed the training. 
     If you click on 'My Profile' tab you will see your score for each module and your total score. 
     If you want to increase your understanding and reach a perfect score of 100, you can redo 
-    any module where your score is lower than 100. You have until [date] to complete this.
+    any module where your score is lower than 100. You have until 26 May to complete this.
     Please note that your score for each module only changes when your new score is higher
     than your previous best score for that module. 
   postcourse_fail: |
     You have not passed the training. You should click on 'My Profile' tab to see your individual scores
     and then repeat the modules where you have a score lower than 100, until your total score
-    is at least 90. You have until [date] to complete this.
+    is at least 90. You have until 26 May to complete this.
 
     Please note that your score for each module only changes when your new score is higher
     than your previous best score for that module. 
